@@ -1,0 +1,8 @@
+
+alias ca='conda activate'
+alias cdea='conda deactivate'
+alias j='just -f "$HOME/justfile" -d "$(pwd)"'
+alias jnb='jupyter notebook'
+alias ll='ls -alFG'
+alias ls='ls -G'
+alias py='python'
