@@ -8,7 +8,6 @@ if sys.platform == "darwin":
     print("\nMacOS detected...\n")
 else:
     raise RuntimeError("Only for MacOS supported currently.")
-
 ########## Setup dotfiles ##########
 print("Setting up dotfile symlinks...")
 repo_root: Path = Path(__file__).parent
@@ -25,7 +24,6 @@ for source, target in files:
     target.symlink_to(source)
     assert target.is_symlink() and target.resolve() == source
     print(f"[x] (created) {source} -> {target}")
-
 ########## Setup global gitignore ##########
 run(
     [
